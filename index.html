@@ -93,11 +93,25 @@
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
-
             </div>
         </div>
-        <div class="footer-bottom"></div>
-
     </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
 </body>
 </html>
